@@ -86,10 +86,11 @@ namespace Linked_list
                         {
                             tail = prev; // delete last element
                         }
-                        count--;
-                        return true;
+                       
 
                     }
+                    count--;
+                    return true;
 
                 }
                 prev = current;
