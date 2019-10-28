@@ -11,6 +11,7 @@ namespace Linked_list
             l.add("a");
             l.add("b");
             l.add("c");
+            l.add("g");
             l.display();
 
             Console.WriteLine("////////////////////////////");
