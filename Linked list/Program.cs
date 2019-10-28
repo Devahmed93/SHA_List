@@ -6,19 +6,18 @@ namespace Linked_list
     {
         static void Main(string[] args)
         {
-            
+
             list<String> l = new list<String>();
             l.add("a");
             l.add("b");
             l.add("c");
             l.display();
+
             Console.WriteLine("////////////////////////////");
-            l.Delete("d");
+            l.Delete("b");
+         
             l.display();
-            Console.WriteLine("////////////////////////////");
-
-
-
+            Console.WriteLine(l.getcount());
 
         }
     }

@@ -8,7 +8,7 @@ namespace Linked_list
     {
         node<T> head;
         node<T> tail;
-        int count = 0;
+         int count = 0;
         public list()
         {
             head = null;
@@ -61,6 +61,10 @@ namespace Linked_list
         {
             head = tail = null;
             count = 0;
+        }
+        public int getcount()
+        {
+            return count;
         }
         public bool Delete(T d)
         {
