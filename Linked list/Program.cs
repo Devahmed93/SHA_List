@@ -7,18 +7,18 @@ namespace Linked_list
         static void Main(string[] args)
         {
 
-            list<String> l = new list<String>();
-            l.add("a");
-            l.add("b");
-            l.add("c");
-            l.add("g");
+            list<int> l = new list<int>();
+            l.add(5);
+            l.add(4);
+            l.add(3);
+            l.add(2);
             l.display();
 
             Console.WriteLine("////////////////////////////");
-            l.Delete("b");
+            l.sort(l);
          
             l.display();
-            Console.WriteLine(l.getcount());
+           
 
         }
     }

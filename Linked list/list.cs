@@ -66,6 +66,30 @@ namespace Linked_list
         {
             return count;
         }
+        public void sort(list<int> l)
+        {
+            node<int> p1 = l.head;
+            node<int> p2 = p1.Next;
+            
+            while (p1.Next!=null)
+            {
+                if (p1.Data>p2.Data)
+                {
+                    int temp = p1.Data;
+                    p1.Data = p2.Data;
+                    p2.Data = temp;
+
+                }
+                p2 = p2.Next;
+                
+                if(p2==null)
+                {
+                    p1 = p1.Next;
+                    p2 = p1.Next;
+                }
+
+            }
+        }
         public bool Delete(T d)
         {
             node<T> current = head;
