@@ -15,7 +15,7 @@ namespace Linked_list
             l.display();
 
             Console.WriteLine("////////////////////////////");
-            l.sort(l);
+            l.sort3mmar(l);
          
             l.display();
            

@@ -90,6 +90,40 @@ namespace Linked_list
 
             }
         }
+        public void sort3mmar(list<int>l)
+        {
+            bool a = true;
+            int c = 0;
+            node<int> p = l.head;
+            while (a)
+            {
+                c = 0;
+                
+                p = l.head;
+                
+                for (int i = 0; i < l.count-1; i++)
+                {
+                    if (p.Data>p.Next.Data)
+                    {
+                        int temp = p.Data;
+                        p.Data = p.Next.Data;
+                        p.Next.Data = temp;
+                        c++;
+
+                    }
+                    p = p.Next;
+                }
+                if (c==0)
+                {
+                    a = false;
+
+                }
+
+            }
+
+
+
+        }
         public bool Delete(T d)
         {
             node<T> current = head;
